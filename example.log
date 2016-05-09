@@ -1,0 +1,1649 @@
+2016/05/08 00:20:21 [notice] 24503#0: using the "epoll" event method
+2016/05/08 00:20:21 [notice] 24503#0: start worker processes
+2016/05/08 00:20:21 [debug] 24503#0: channel 3:8
+2016/05/08 00:20:21 [notice] 24503#0: start worker process 18662
+2016/05/08 00:20:21 [debug] 24503#0: pass channel s:1 pid:18662 fd:3 to s:0 pid:16674 fd:6
+2016/05/08 00:20:21 [debug] 18662#0: notify eventfd: 12
+2016/05/08 00:20:21 [debug] 18662#0: malloc: 00000000019642C0:6144
+2016/05/08 00:20:21 [debug] 18662#0: malloc: 00007FBF2A3A5010:221184
+2016/05/08 00:20:21 [debug] 18662#0: malloc: 00000000019AF090:98304
+2016/05/08 00:20:21 [debug] 18662#0: malloc: 00000000019C70A0:98304
+2016/05/08 00:20:21 [debug] 18662#0: epoll add event: fd:13 op:1 ev:00002001
+2016/05/08 00:20:21 [debug] 18662#0: epoll add event: fd:7 op:1 ev:00002001
+2016/05/08 00:20:21 [debug] 18662#0: epoll add event: fd:8 op:1 ev:00002001
+2016/05/08 00:20:21 [debug] 18662#0: setproctitle: "nginx: worker process"
+2016/05/08 00:20:21 [debug] 18662#0: worker cycle
+2016/05/08 00:20:21 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:21 [debug] 24503#0: child: 0 16674 e:0 t:0 d:0 r:1 j:0
+2016/05/08 00:20:21 [debug] 24503#0: child: 1 18662 e:0 t:0 d:0 r:1 j:1
+2016/05/08 00:20:21 [debug] 24503#0: sigsuspend
+2016/05/08 00:20:21 [notice] 24503#0: signal 17 (SIGCHLD) received
+2016/05/08 00:20:21 [notice] 24503#0: worker process 16674 exited with code 0
+2016/05/08 00:20:21 [debug] 24503#0: shmtx forced unlock
+2016/05/08 00:20:21 [debug] 24503#0: wake up, sigio 0
+2016/05/08 00:20:21 [debug] 24503#0: reap children
+2016/05/08 00:20:21 [debug] 24503#0: child: 0 16674 e:1 t:1 d:0 r:1 j:0
+2016/05/08 00:20:21 [debug] 24503#0: pass close channel s:0 pid:16674 to:18662
+2016/05/08 00:20:21 [debug] 24503#0: child: 1 18662 e:0 t:0 d:0 r:1 j:0
+2016/05/08 00:20:21 [debug] 24503#0: sigsuspend
+2016/05/08 00:20:21 [notice] 24503#0: signal 29 (SIGIO) received
+2016/05/08 00:20:21 [debug] 24503#0: wake up, sigio 0
+2016/05/08 00:20:21 [debug] 24503#0: sigsuspend
+2016/05/08 00:20:21 [debug] 18662#0: epoll: fd:8 ev:0001 d:00007FBF2A3A51C0
+2016/05/08 00:20:21 [debug] 18662#0: channel handler
+2016/05/08 00:20:21 [debug] 18662#0: channel: 32
+2016/05/08 00:20:21 [debug] 18662#0: channel command: 2
+2016/05/08 00:20:21 [debug] 18662#0: close channel s:0 pid:16674 our:16674 fd:6
+2016/05/08 00:20:21 [debug] 18662#0: channel: -2
+2016/05/08 00:20:21 [debug] 18662#0: timer delta: 122
+2016/05/08 00:20:21 [debug] 18662#0: worker cycle
+2016/05/08 00:20:21 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:34 [debug] 18662#0: epoll: fd:7 ev:0001 d:00007FBF2A3A50E8
+2016/05/08 00:20:34 [debug] 18662#0: accept on 0.0.0.0:25003, ready: 0
+2016/05/08 00:20:34 [debug] 18662#0: posix_memalign: 0000000001973590:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 accept: 158.132.219.214:60601 fd:3
+2016/05/08 00:20:34 [debug] 18662#0: posix_memalign: 0000000001983890:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 event timer add: 3: 60000:1462638094750
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 epoll add event: fd:3 op:1 ev:80002001
+2016/05/08 00:20:34 [debug] 18662#0: timer delta: 13346
+2016/05/08 00:20:34 [debug] 18662#0: worker cycle
+2016/05/08 00:20:34 [debug] 18662#0: epoll timer: 60000
+2016/05/08 00:20:34 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http check ssl handshake
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http recv(): 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 https ssl handshake: 0x16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL NPN advertised
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_do_handshake: -1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 0
+2016/05/08 00:20:34 [debug] 18662#0: timer delta: 0
+2016/05/08 00:20:34 [debug] 18662#0: worker cycle
+2016/05/08 00:20:34 [debug] 18662#0: epoll timer: 60000
+2016/05/08 00:20:34 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL handshake handler: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_do_handshake: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL: TLSv1.2, cipher: "ECDHE-RSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH Au=RSA Enc=AESGCM(256) Mac=AEAD"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 init http2 connection
+2016/05/08 00:20:34 [debug] 18662#0: malloc: 00007FBF2A364010:262144
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019830D0:400
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AA820:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 0000000001973678
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 0000000001982550:256
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 send SETTINGS frame
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AA928 sid:0 bl:0 len:4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AA870 sid:0 bl:0 len:18
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 0000000001983F90:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 000000000195E1E0:16384
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 27
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 13
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 40
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 40
+2016/05/08 00:20:34 [debug] 18662#0: *1773 tcp_nodelay
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AA870 sid:0 bl:0 len:18
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AA928 sid:0 bl:0 len:4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AA820, unused: 3656
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 000000000195E1E0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 event timer del: 3: 1462638094750
+2016/05/08 00:20:34 [debug] 18662#0: *1773 event timer add: 3: 180000:1462638214761
+2016/05/08 00:20:34 [debug] 18662#0: timer delta: 11
+2016/05/08 00:20:34 [debug] 18662#0: worker cycle
+2016/05/08 00:20:34 [debug] 18662#0: epoll timer: 180000
+2016/05/08 00:20:34 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 idle handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AA820:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 24
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 45
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 preface verified
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:4 f:0 l:6 sid:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 send SETTINGS frame
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364037 end:00007FBF2A36406D
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:4 f:1 l:0 sid:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364040 end:00007FBF2A36406D
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:36 sid:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:1 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 hpack encoded string length: 14
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 add header to hpack table: ":authority: 158.132.11.87:25003"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A92F0:512
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 0000000001989B00:4096
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 hpack table account: 61 free:4096
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header: 19
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 hpack raw string length: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 add header to hpack table: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 hpack table account: 41 free:4035
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 0000000001983430:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header: 58
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 hpack encoded string length: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 add header to hpack table: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 hpack table account: 55 free:3994
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 00000000019949E8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:1 create HEADERS frame 0000000001994C08: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 0000000001994D10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C08 sid:1 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AA870 sid:0 bl:0 len:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 000000000195E1E0:16384
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 154
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 154
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AA870 sid:0 bl:0 len:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:1 HEADERS frame 0000000001994C08 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C08 sid:1 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001994E00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:1 create DATA frame 0000000001994C08: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:1 create DATA frame 0000000001994E80: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994E80 sid:1 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C08 sid:1 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8232
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8232
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:1 DATA frame 0000000001994C08 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C08 sid:1 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:1 DATA frame 0000000001994E80 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994E80 sid:1 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 1, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 00000000019949E8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 1551
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36406D end:00007FBF2A36406D
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AA820, unused: 3336
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 000000000195E1E0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 event timer: 3, old: 1462638214761, new: 1462638214764
+2016/05/08 00:20:34 [debug] 18662#0: timer delta: 3
+2016/05/08 00:20:34 [debug] 18662#0: worker cycle
+2016/05/08 00:20:34 [debug] 18662#0: epoll timer: 179997
+2016/05/08 00:20:34 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 idle handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AA820:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:3 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:3 create HEADERS frame 00000000019AC040: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 00000000019AC148
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:3 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 000000000195E1E0:16384
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:3 HEADERS frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:3 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 00000000019AC238
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:3 create DATA frame 00000000019AC040: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:3 create DATA frame 00000000019AC2B8: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC2B8 sid:3 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:3 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:3 DATA frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:3 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:3 DATA frame 00000000019AC2B8 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC2B8 sid:3 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 3, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 1527
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36401F end:00007FBF2A36404C
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:5 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AA170:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 0000000001994A00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:5 create HEADERS frame 0000000001994C20: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 0000000001994D28
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:5 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:5 HEADERS frame 0000000001994C20 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:5 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001994E18
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:5 create DATA frame 0000000001994C20: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:5 create DATA frame 0000000001994E98: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994E98 sid:5 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:5 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:5 DATA frame 0000000001994C20 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:5 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:5 DATA frame 0000000001994E98 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994E98 sid:5 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 5, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 0000000001994A00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 1527
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36402E end:00007FBF2A36404C
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:7 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:7 create HEADERS frame 00000000019AC040: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 00000000019AC148
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:7 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:7 HEADERS frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:7 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 00000000019AC238
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:7 create DATA frame 00000000019AC040: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:7 create DATA frame 00000000019AC2B8: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC2B8 sid:7 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:7 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:7 DATA frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:7 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:7 DATA frame 00000000019AC2B8 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC2B8 sid:7 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 7, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 1527
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36403D end:00007FBF2A36404C
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:9 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 0000000001971E40:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 0000000001994A00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:9 create HEADERS frame 0000000001994C20: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 0000000001994D28
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:9 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:9 HEADERS frame 0000000001994C20 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:9 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001994E18
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:9 create DATA frame 0000000001994C20: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:9 create DATA frame 0000000001994E98: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994E98 sid:9 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:9 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:9 DATA frame 0000000001994C20 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:9 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:9 DATA frame 0000000001994E98 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994E98 sid:9 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 9, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 0000000001994A00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 1527
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36404C end:00007FBF2A36404C
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AA820, unused: 3504
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 000000000195E1E0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 event timer: 3, old: 1462638214761, new: 1462638214764
+2016/05/08 00:20:34 [debug] 18662#0: timer delta: 0
+2016/05/08 00:20:34 [debug] 18662#0: worker cycle
+2016/05/08 00:20:34 [debug] 18662#0: epoll timer: 179997
+2016/05/08 00:20:34 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 idle handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 reusable connection: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AA820:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: 15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:11 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:11 create HEADERS frame 00000000019AC040: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 00000000019AC148
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:11 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 000000000195E1E0:16384
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:11 HEADERS frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:11 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 00000000019AC238
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:11 create DATA frame 00000000019AC040: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:11 create DATA frame 00000000019AC2B8: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC2B8 sid:11 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:11 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:11 DATA frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:11 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:11 DATA frame 00000000019AC2B8 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC2B8 sid:11 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 11, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 1527
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36401F end:00007FBF2A36403D
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:13
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:13 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 0000000001998BA0:256 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 0000000001994A00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:13 create HEADERS frame 0000000001994C20: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 0000000001994D28
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:13 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:13 HEADERS frame 0000000001994C20 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:13 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001994E18
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:13 create DATA frame 0000000001994C20: len:8192 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:13 create DATA frame 0000000001994E98: len:22 flags:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994E98 sid:13 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:13 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8377
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:13 DATA frame 0000000001994C20 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:13 bl:0 len:8192
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:13 DATA frame 0000000001994E98 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 0000000001994E98 sid:13 bl:0 len:22
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 close stream 13, queued 0, processing 1
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:34 [debug] 18662#0: *1773 run cleanup: 0000000001994A00
+2016/05/08 00:20:34 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 1527
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36402E end:00007FBF2A36403D
+2016/05/08 00:20:34 [debug] 18662#0: *1773 process http2 frame type:1 f:5 l:6 sid:15
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 HEADERS frame sid:15 on 0 excl:0 weight:16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:34 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:34 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:34 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:34 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 add cleanup: 00000000019ABE20
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:15 create HEADERS frame 00000000019AC040: len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http cleanup add: 00000000019AC148
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:15 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:15 HEADERS frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:15 bl:1 len:136
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http postpone filter "/index.html?" 00000000019AC238
+2016/05/08 00:20:34 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:15 create DATA frame 00000000019AC040: len:8037 flags:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame out: 00000000019AC040 sid:15 bl:0 len:8037
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL buf copy: 8037
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL to write: 8191
+2016/05/08 00:20:34 [debug] 18662#0: *1773 SSL_write: 8191
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2:15 DATA frame 00000000019AC040 was sent
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame sent: 00000000019AC040 sid:15 bl:0 len:8037
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http write filter 00000000019AC248
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:34 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36403D end:00007FBF2A36403D
+2016/05/08 00:20:34 [debug] 18662#0: *1773 event timer del: 3: 1462638214761
+2016/05/08 00:20:34 [debug] 18662#0: timer delta: 2
+2016/05/08 00:20:34 [debug] 18662#0: worker cycle
+2016/05/08 00:20:34 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:39 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 13
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:3 f:0 l:4 sid:15
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 RST_STREAM frame, sid:15 status:0
+2016/05/08 00:20:39 [info] 18662#0: *1773 client terminated stream 15 with status 0 while sending response to client, client: 158.132.219.214, server: localhost, request: "GET / HTTP/2.0", host: "158.132.11.87:25003"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http test reading
+2016/05/08 00:20:39 [info] 18662#0: *1773 client prematurely closed connection while sending response to client, client: 158.132.219.214, server: localhost, request: "GET / HTTP/2.0", host: "158.132.11.87:25003"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: 499, "/index.html?" a:1, c:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http terminate request count:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http terminate cleanup count:1 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http posted request: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http terminate handler count:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 close stream 15, queued 0, processing 1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:39 [debug] 18662#0: *1773 run cleanup: 00000000019ABE20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 1688
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36401D end:00007FBF2A364031
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:1 f:25 l:11 sid:17
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 HEADERS frame sid:17 on 0 excl:0 weight:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 000000000198AB10:256 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019945B0:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 add cleanup: 0000000001994A00
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http static fd: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:17 create HEADERS frame 0000000001994C20: len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cleanup add: 0000000001994D28
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:17 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:17 HEADERS frame 0000000001994C20 was sent
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:17 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 malloc: 00000000019A55A0:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 read: 6, 00000000019A55A0, 8214, 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001994E18
+2016/05/08 00:20:39 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter 0000000001994E28
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364031 end:00007FBF2A364031
+2016/05/08 00:20:39 [debug] 18662#0: timer delta: 5020
+2016/05/08 00:20:39 [debug] 18662#0: worker cycle
+2016/05/08 00:20:39 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:39 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:1 f:25 l:11 sid:19
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 HEADERS frame sid:19 on 17 excl:0 weight:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019A75C0:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 0000000001995830:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 add cleanup: 0000000001995C80
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http static fd: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:19 create HEADERS frame 0000000001995EA0: len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cleanup add: 0000000001995FA8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame out: 0000000001995EA0 sid:19 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:19 HEADERS frame 0000000001995EA0 was sent
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame sent: 0000000001995EA0 sid:19 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 malloc: 0000000001996840:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 read: 9, 0000000001996840, 8214, 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001996098
+2016/05/08 00:20:39 [debug] 18662#0: *1773 write new buf t:1 f:1 0000000001996840, pos 0000000001996840, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter 00000000019960A8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364024 end:00007FBF2A364038
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:1 f:25 l:11 sid:21
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 HEADERS frame sid:21 on 17 excl:0 weight:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019AC9E0:256 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 0000000001967210:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 0000000001968220:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 add cleanup: 0000000001968670
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http static fd: 14
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:21 create HEADERS frame 0000000001968890: len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cleanup add: 0000000001968998
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame out: 0000000001968890 sid:21 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:21 HEADERS frame 0000000001968890 was sent
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame sent: 0000000001968890 sid:21 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 malloc: 0000000001969230:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 read: 14, 0000000001969230, 8214, 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001968A88
+2016/05/08 00:20:39 [debug] 18662#0: *1773 write new buf t:1 f:1 0000000001969230, pos 0000000001969230, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter 0000000001968A98
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364038 end:00007FBF2A364038
+2016/05/08 00:20:39 [debug] 18662#0: timer delta: 1
+2016/05/08 00:20:39 [debug] 18662#0: worker cycle
+2016/05/08 00:20:39 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:39 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:1 f:25 l:11 sid:23
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 HEADERS frame sid:23 on 21 excl:0 weight:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019736C0:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019746D0:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 add cleanup: 0000000001974B20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http static fd: 15
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:23 create HEADERS frame 0000000001974D40: len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cleanup add: 0000000001974E48
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame out: 0000000001974D40 sid:23 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:23 HEADERS frame 0000000001974D40 was sent
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame sent: 0000000001974D40 sid:23 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 malloc: 00000000019756E0:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 read: 15, 00000000019756E0, 8214, 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001974F38
+2016/05/08 00:20:39 [debug] 18662#0: *1773 write new buf t:1 f:1 00000000019756E0, pos 00000000019756E0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter 0000000001974F48
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364024 end:00007FBF2A364024
+2016/05/08 00:20:39 [debug] 18662#0: timer delta: 0
+2016/05/08 00:20:39 [debug] 18662#0: worker cycle
+2016/05/08 00:20:39 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:39 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:1 f:25 l:11 sid:25
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 HEADERS frame sid:25 on 21 excl:0 weight:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 00000000019955C0:256 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 0000000001977700:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 0000000001978710:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 add cleanup: 0000000001978B60
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http static fd: 16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:25 create HEADERS frame 0000000001978D80: len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cleanup add: 0000000001978E88
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame out: 0000000001978D80 sid:25 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:25 HEADERS frame 0000000001978D80 was sent
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame sent: 0000000001978D80 sid:25 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 malloc: 0000000001979720:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 read: 16, 0000000001979720, 8214, 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000001978F78
+2016/05/08 00:20:39 [debug] 18662#0: *1773 write new buf t:1 f:1 0000000001979720, pos 0000000001979720, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter 0000000001978F88
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364024 end:00007FBF2A364024
+2016/05/08 00:20:39 [debug] 18662#0: timer delta: 0
+2016/05/08 00:20:39 [debug] 18662#0: worker cycle
+2016/05/08 00:20:39 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:39 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: 20
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 process http2 frame type:1 f:25 l:11 sid:27
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 HEADERS frame sid:27 on 23 excl:0 weight:1
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 000000000197B740:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 posix_memalign: 000000000197C750:4096 @16
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http uri: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http args: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http exten: ""
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 64
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 63
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "accept: */*"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 get indexed header name: 62
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http header: "user-agent: nghttp2/1.9.2"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 http request line: "GET / HTTP/2.0"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 open index "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 internal redirect: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 test location: "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 using configuration "/"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cl:-1 max:1048576
+2016/05/08 00:20:39 [debug] 18662#0: *1773 rewrite phase: 2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post rewrite phase: 3
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 4
+2016/05/08 00:20:39 [debug] 18662#0: *1773 generic phase: 5
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 6
+2016/05/08 00:20:39 [debug] 18662#0: *1773 access phase: 7
+2016/05/08 00:20:39 [debug] 18662#0: *1773 post access phase: 8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 10
+2016/05/08 00:20:39 [debug] 18662#0: *1773 content phase: 11
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http filename: "/var/www/test/index.html"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 add cleanup: 000000000197CBA0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http static fd: 17
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 header filter
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:27 create HEADERS frame 000000000197CDC0: len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http cleanup add: 000000000197CEC8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame out: 000000000197CDC0 sid:27 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:39 [debug] 18662#0: *1773 SSL buf copy: 136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2:27 HEADERS frame 000000000197CDC0 was sent
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame sent: 000000000197CDC0 sid:27 bl:1 len:136
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 malloc: 000000000197D760:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 read: 17, 000000000197D760, 8214, 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http postpone filter "/index.html?" 000000000197CFB8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 write new buf t:1 f:1 000000000197D760, pos 000000000197D760, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http write filter 000000000197CFC8
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http copy filter: -2 "/index.html?"
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -2, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http finalize request: -4, "/index.html?" a:1, c:2
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http request count:2 blk:0
+2016/05/08 00:20:39 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A364024 end:00007FBF2A364024
+2016/05/08 00:20:39 [debug] 18662#0: timer delta: 1
+2016/05/08 00:20:39 [debug] 18662#0: worker cycle
+2016/05/08 00:20:39 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:42 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_read: 14
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 process http2 frame type:2 f:0 l:5 sid:17
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 PRIORITY frame sid:17 on 23 excl:1 weight:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36401E end:00007FBF2A36401E
+2016/05/08 00:20:42 [debug] 18662#0: timer delta: 3002
+2016/05/08 00:20:42 [debug] 18662#0: worker cycle
+2016/05/08 00:20:42 [debug] 18662#0: epoll timer: -1
+2016/05/08 00:20:42 [debug] 18662#0: epoll: fd:3 ev:0001 d:00007FBF2A3A5298
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_read: 13
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_read: -1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_get_error: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 process http2 frame type:8 f:0 l:4 sid:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 WINDOW_UPDATE frame sid:0 window:1073741824
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer handler: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 write old buf t:1 f:1 00000000019A55A0, pos 00000000019A55A0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:17 create DATA frame 0000000001994C20: len:8192 flags:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:17 create DATA frame 0000000001994E98: len:22 flags:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001994E98 sid:17 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001994C20 sid:17 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL to write: 9102
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_write: 9102
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:17 DATA frame 0000000001994C20 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001994C20 sid:17 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:17 DATA frame 0000000001994E98 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001994E98 sid:17 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer output filter: 0, "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer done: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 close stream 17, queued 0, processing 6
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 run cleanup: 0000000001994A00
+2016/05/08 00:20:42 [debug] 18662#0: *1773 file cleanup: fd:6
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019A55A0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019945B0, unused: 1527
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer handler: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 write old buf t:1 f:1 0000000001996840, pos 0000000001996840, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:19 create DATA frame 0000000001995EA0: len:8192 flags:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:19 create DATA frame 0000000001996118: len:22 flags:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001996118 sid:19 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001995EA0 sid:19 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL to write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:19 DATA frame 0000000001995EA0 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001995EA0 sid:19 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:19 DATA frame 0000000001996118 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001996118 sid:19 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer output filter: 0, "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer done: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 close stream 19, queued 0, processing 5
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 run cleanup: 0000000001995C80
+2016/05/08 00:20:42 [debug] 18662#0: *1773 file cleanup: fd:9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001996840
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019A75C0, unused: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001995830, unused: 1527
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer handler: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 write old buf t:1 f:1 0000000001969230, pos 0000000001969230, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:21 create DATA frame 0000000001968890: len:8192 flags:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:21 create DATA frame 0000000001968B08: len:22 flags:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001968B08 sid:21 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001968890 sid:21 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL to write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:21 DATA frame 0000000001968890 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001968890 sid:21 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:21 DATA frame 0000000001968B08 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001968B08 sid:21 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer output filter: 0, "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer done: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 close stream 21, queued 0, processing 4
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 run cleanup: 0000000001968670
+2016/05/08 00:20:42 [debug] 18662#0: *1773 file cleanup: fd:14
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001969230
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001967210, unused: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001968220, unused: 1527
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer handler: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 write old buf t:1 f:1 00000000019756E0, pos 00000000019756E0, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:23 create DATA frame 0000000001974D40: len:8192 flags:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:23 create DATA frame 0000000001974FB8: len:22 flags:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001974FB8 sid:23 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001974D40 sid:23 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL to write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:23 DATA frame 0000000001974D40 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001974D40 sid:23 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:23 DATA frame 0000000001974FB8 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001974FB8 sid:23 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer output filter: 0, "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer done: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 close stream 23, queued 0, processing 3
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 run cleanup: 0000000001974B20
+2016/05/08 00:20:42 [debug] 18662#0: *1773 file cleanup: fd:15
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019756E0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019736C0, unused: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019746D0, unused: 1527
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer handler: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 write old buf t:1 f:1 0000000001979720, pos 0000000001979720, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:25 create DATA frame 0000000001978D80: len:8192 flags:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:25 create DATA frame 0000000001978FF8: len:22 flags:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001978FF8 sid:25 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 0000000001978D80 sid:25 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL to write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:25 DATA frame 0000000001978D80 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001978D80 sid:25 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:25 DATA frame 0000000001978FF8 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 0000000001978FF8 sid:25 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer output filter: 0, "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer done: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 close stream 25, queued 0, processing 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 run cleanup: 0000000001978B60
+2016/05/08 00:20:42 [debug] 18662#0: *1773 file cleanup: fd:16
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001979720
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001977700, unused: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 0000000001978710, unused: 1527
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http run request: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer handler: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http output filter "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http postpone filter "/index.html?" 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 write old buf t:1 f:1 000000000197D760, pos 000000000197D760, size: 8214 file: 0, size: 8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter: l:1 f:0 s:8214
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter limit 0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:27 create DATA frame 000000000197CDC0: len:8192 flags:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:27 create DATA frame 000000000197D038: len:22 flags:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 000000000197D038 sid:27 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame out: 000000000197CDC0 sid:27 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 9
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL buf copy: 22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL to write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 SSL_write: 8232
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:27 DATA frame 000000000197CDC0 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 000000000197CDC0 sid:27 bl:0 len:8192
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2:27 DATA frame 000000000197D038 was sent
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame sent: 000000000197D038 sid:27 bl:0 len:22
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http write filter 0000000000000000
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http copy filter: 0 "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer output filter: 0, "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http writer done: "/index.html?"
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http finalize request: 0, "/index.html?" a:1, c:1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http request count:1 blk:0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 close stream 27, queued 0, processing 1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http close request
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http log handler
+2016/05/08 00:20:42 [debug] 18662#0: *1773 run cleanup: 000000000197CBA0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 file cleanup: fd:17
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 000000000197D760
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 000000000197B740, unused: 2
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 000000000197C750, unused: 1527
+2016/05/08 00:20:42 [debug] 18662#0: *1773 http2 frame complete pos:00007FBF2A36401D end:00007FBF2A36401D
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 00000000019AA820, unused: 944
+2016/05/08 00:20:42 [debug] 18662#0: *1773 free: 000000000195E1E0
+2016/05/08 00:20:42 [debug] 18662#0: *1773 reusable connection: 1
+2016/05/08 00:20:42 [debug] 18662#0: *1773 event timer add: 3: 180000:1462638222790
+2016/05/08 00:20:42 [debug] 18662#0: timer delta: 0
+2016/05/08 00:20:42 [debug] 18662#0: worker cycle
+2016/05/08 00:20:42 [debug] 18662#0: epoll timer: 180000
+2016/05/08 00:20:47 [debug] 18662#0: epoll: fd:3 ev:2001 d:00007FBF2A3A5298
+2016/05/08 00:20:47 [debug] 18662#0: *1773 http2 idle handler
+2016/05/08 00:20:47 [debug] 18662#0: *1773 reusable connection: 0
+2016/05/08 00:20:47 [debug] 18662#0: *1773 posix_memalign: 00000000019AB9D0:4096 @16
+2016/05/08 00:20:47 [debug] 18662#0: *1773 http2 read handler
+2016/05/08 00:20:47 [debug] 18662#0: *1773 SSL_read: 0
+2016/05/08 00:20:47 [debug] 18662#0: *1773 SSL_get_error: 6
+2016/05/08 00:20:47 [debug] 18662#0: *1773 peer shutdown SSL cleanly
+2016/05/08 00:20:47 [debug] 18662#0: *1773 close http connection: 3
+2016/05/08 00:20:47 [debug] 18662#0: *1773 SSL_shutdown: 1
+2016/05/08 00:20:47 [debug] 18662#0: *1773 event timer del: 3: 1462638222790
+2016/05/08 00:20:47 [debug] 18662#0: *1773 reusable connection: 0
+2016/05/08 00:20:47 [debug] 18662#0: *1773 run cleanup: 0000000001973678
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 00000000019AB9D0, unused: 4016
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000000000000
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001989B00
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 00000000019A92F0
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001982550
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 00000000019830D0
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001973590, unused: 0
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001983890, unused: 8
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001983F90, unused: 8
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001983430, unused: 40
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 00000000019AA170, unused: 16
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001971E40, unused: 16
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 0000000001998BA0, unused: 16
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 000000000198AB10, unused: 16
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 00000000019AC9E0, unused: 16
+2016/05/08 00:20:47 [debug] 18662#0: *1773 free: 00000000019955C0, unused: 16
+2016/05/08 00:20:47 [debug] 18662#0: timer delta: 5015
+2016/05/08 00:20:47 [debug] 18662#0: worker cycle
+2016/05/08 00:20:47 [debug] 18662#0: epoll timer: -1
